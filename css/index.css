@@ -1,476 +1,55 @@
-ul li {
-  list-style: none;
+.header{
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+.header-nav{
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  color: white;
+}
+.header-nav li a {
+  color: white;
 }
 
-.main {
-  background-image: url(/assets/img/applebg.jpg);
-  min-width: 100%;
+.main-container{
+  background-image: url("../assets/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.header {
-  min-width: 100%;
-  height: 44px;
-  background-color: black;
-  opacity: 70%;
-}
-
-.container {
-  max-width: 982px;
-  height: 100vh;
-  padding: 0 auto;
-  margin: 0 auto;
-}
-
-.menu {
-  height: 44px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.nav-btn {
-  transition: color 0.3s linear;
-}
-
-.nav-btn:hover {
-  color: red;
-}
-
-.nav {
-  color: white;
-}
-
-.advertising-container {
-  margin: 0 auto;
-  padding: 0 auto;
-  height: 100%;
-  width: 895px;
-}
-
-.advertising-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.text-name {
-  color: white;
-  font-size: 32px;
-  padding-top: 103px;
-}
-
-.title {
-  font-size: 27px;
-  color: white;
-  padding-top: 450px;
-  padding-bottom: 90px;
-  text-align: center;
-}
-
-.sub-title {
-  text-align: center;
-  padding-top: 14px;
-  font-size: 21px;
-}
-
-.appleevent {
-  background-image: url(/assets/img/figure.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 736px;
-  margin-top: 12px;
+}
+.header-menu {
+  display: none;
 }
 
-.container-Appleevent {
-  width: 1206px;
-  margin: 0 auto;
-  padding: 0 auto;
-  font-size: 56px;
-  color: white;
-  text-align: center;
-  padding-top: 51px;
+@media screen and (max-width: 970px) {
+  .main-container{
+    background-image: url("../assets/img/bg-laptop.png");
+  }
 }
 
-.sub-title-Appleevent {
-  font-size: 16px;
-  padding-top: 5px;
-  color: #6e6e73;
+@media screen and (max-width: 860px) {
+  .main-container{
+    background-image: url("../assets/img/bg-mobile.png");
+  }
+  .header {
+    padding: 20px 16px;
+    justify-content: space-between;
+  }
+  .header-nav, .header-search {
+    display: none;
+  }
+  .header-menu {
+    display: block;
+  }
 }
 
-.appleevent-btn {
-  font-size: 21px;
-  padding-top: 14px;
-}
-
-.event-btn {
-  color: #2997ff;
-}
-
-.bigger {
-  background-image: url(/assets/img/phone.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 736px;
-  padding-top: 12px;
-  /* (top) (left, right) (bottom) */
-  padding: 12px auto 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.container-bigger {
-  width: 263px;
-  height: 159px;
-  /* top (left, right) bottom */
-  margin: 43px auto 20px;
-  text-align: center;
-}
-
-.bigger-title {
-  font-size: 56px;
-}
-
-.sub-title-bigger {
-  font-size: 28px;
-  margin-bottom: 14px;
-}
-
-.bigger-btn {
-}
-
-.button-bigger {
-  color: #0066cc;
-  font-size: 21px;
-}
-
-.gallery-bg {
-  background-color: #0d0d0d;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0 auto;
-}
-
-.title-iphone14pro {
-  position: absolute;
-  padding-left: 45px;
-}
-
-.iphone14 {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
-}
-
-.airpods {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
-}
-
-.tese1 {
-  min-width: 100%;
-}
-
-.watch {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 12px;
-}
-
-.image-iphone14 {
-  position: relative;
-}
-.iphone14-content {
-  position: absolute;
-  top: 50%;
-}
-
-.title-iphone14 {
-
-  color: white;
-  font-size: 40px;
-}
-
-.sub-title-iphone14 {
-
-  font-size: 21px;
-  color: white;
-}
-
-.btn14 {
-  color: #2997ff;
-  font-size: 17px;
-}
-
-.image-airpods {
-  position: relative;
-}
-
-.airpods-icon {
-  position: absolute;
-  top: 53px;
-  left: 354px;
-  right: 354px;
-  bottom: 490px;
-}
-
-.title-airpods {
-  position: absolute;
-  font-size: 40px;
-  top: 97px;
-  left: 299px;
-}
-
-.sub-title-airpods {
-  position: absolute;
-  font-size: 21px;
-  top: 147px;
-  left: 308px;
-}
-
-.link-airpods {
-  position: absolute;
-  color: #0066cc;
-  font-size: 17px;
-  top: 184px;
-  left: 343px;
-}
-
-.image-watch {
-  position: relative;
-}
-
-.watch-title {
-  position: absolute;
-  top: 54px;
-  left: 154px;
-  right: 154px;
-}
-
-.watch-sub-title {
-  position: absolute;
-  top: 121px;
-  left: 288px;
-  font-size: 21px;
-}
-
-.link-watch {
-  position: absolute;
-  font-size: 17px;
-  top: 158px;
-  left: 310px;
-  right: 281px;
-}
-
-.btn-watch {
-  color: #0066cc;
-}
-
-.ipad {
-  position: relative;
-  overflow: hidden;
-  margin-right: 12px;
-}
-
-.ipad-title {
-  position: absolute;
-  top: 51px;
-  left: 294px;
-  font-size: 40px;
-}
-
-.ipad-sub-title {
-  position: absolute;
-  top: 101px;
-  left: 207px;
-  font-size: 21px;
-}
-
-.ipad-link {
-  position: absolute;
-  top: 138px;
-  left: 277px;
-}
-
-.ipad-btn {
-  color: #0066cc;
-  font-size: 17px;
-}
-
-.watch-black-image {
-  position: relative;
-}
-
-.watch-black {
-  overflow: hidden;
-  margin-right: 12px;
-}
-
-.logo-black {
-  position: absolute;
-  top: 59px;
-  left: 117px;
-}
-
-.black-title {
-  position: absolute;
-  color: white;
-  font-size: 21px;
-  top: 121px;
-  left: 255px;
-}
-
-.link-black {
-  position: absolute;
-  top: 159px;
-  left: 290px;
-}
-
-.btn-black {
-  font-size: 17px;
-  color: #0066cc;
-}
-
-.card {
-  overflow: hidden;
-  margin-right: 12px;
-}
-
-.image-card {
-  position: relative;
-}
-
-.card-logo {
-  position: absolute;
-  top: 58px;
-  left: 117px;
-}
-
-.card-title {
-  position: absolute;
-  font-size: 21px;
-  top: 100px;
-  left: 235px;
-}
-
-.link-card {
-  position: absolute;
-  top: 163px;
-  left: 260px;
-}
-
-.card-btn {
-  font-size: 17px;
-  color: #0066cc;
-}
-
-.iphone-gallery-1 {
-  display: flex;
-  gap: 8px;
-}
-
-.iphone-gallery-2 {
-  display: flex;
-  gap: 8px;
-}
-
-.iphone-gallery-3 {
-  display: flex;
-  gap: 8px;
-}
-
-.info {
-  background-color: #161616;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.information {
-  color: white;
-  font-size: 12px;
-}
-
-.information-2 {
-  padding-top: 11px;
-}
-
-.information-3 {
-  padding-top: 11px;
-}
-
-.information-4 {
-  padding-top: 11px;
-}
-
-.information-5 {
-  padding-top: 11px;
-}
-
-.lists {
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "shop services store business values"
-    "shop services store education values"
-    "shop services store healthcare about"
-    ". account . goverment about";
-}
-
-.lists div ul {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  list-style: none;
-}
-.lists div ul li {
-  margin-top: 12px;
-}
-
-.shop { grid-area: shop; }
-
-.store { grid-area: store; }
-
-.services { grid-area: services; }
-
-.business { grid-area: business; }
-
-.values { grid-area: values; }
-
-.education { grid-area: education; }
-
-.healthcare { grid-area: healthcare; }
-
-.goverment { grid-area: goverment; }
-
-.about { grid-area: about; }
-
-.account { grid-area: account; }
-
-
-/* .services-list-items li {
-} */
-
-@media screen and (max-width: 390px) {
-  .main {
-    background-image: url(/assets/img/applebg.jpg);
-    max-width: 390px;
-    height: 844px;
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (max-width: 530px){
+  .main-container{
+    background-size: contain;
   }
 }
